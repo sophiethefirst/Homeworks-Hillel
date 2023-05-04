@@ -64,13 +64,13 @@ console.log(fillArray());
 
 // Створити функцію, яка прибирає з рядка всі символи, які ми передали другим аргументом. 'func(" hello world", ['l', 'd'])' поверне нам "heo wor". Вихідний рядок та символи для видалення задає користувач.
 
-let deleteLetters = (sentence, letters) => {
+let deleteLetters = () => {
   let userSentence = prompt('Введіть ваш рядок');
   let lettersToDelete = prompt('Введіть символи, розділені комою, які ви хотіли би видалити з рядка');
-  const userStrArr = sentence.split('');
-  const filteredArr = userStrArr.filter(e => !letters.includes(e));
+  const userStrArr = userSentence.split('');
+  const filteredArr = userStrArr.filter(e => !lettersToDelete.includes(e));
   return filteredArr.join('');
 };
 
-const resultStr = deleteLetters(userSentence, lettersToDelete);
+const resultStr = deleteLetters();
 console.log(resultStr);
