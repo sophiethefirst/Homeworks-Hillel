@@ -1,6 +1,6 @@
-import { Human } from "./human";
-import { Appartment } from "./appartment";
-import { Building } from "./building";
+import { Human } from "./HW19. Building/human";
+import { Appartment } from "./HW19. Building/appartment";
+import { Building } from "./HW19. Building/building";
 
 const humanLesia = new Human('Lesia Ukrainka', 'female');
 const humanTaras = new Human('Taras Shevchenko', 'male');
