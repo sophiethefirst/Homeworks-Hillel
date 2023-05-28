@@ -9,15 +9,15 @@ let image = document.createElement('img');
 image.src = 'https://media.tenor.com/QFSdaXEwtBAAAAAC/hello-there-general-kenobi.gif';
 document.querySelector('.picture')
 newDiv.append(image);
-image.style.display = 'none';
+image.style.display = 'inherit';
 
 let showPic = () => {
-    image.style.display = 'block';
+    newDiv.style.display = 'block';
     input.style.borderColor = 'blue';
 };
 
 let hidePic = () => {
-    image.style.display = 'none';
+    newDiv.style.display = 'none';
     input.style.borderColor = '';
 }
 
