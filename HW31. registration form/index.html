@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form id="form" method="GET">
+        <label for="name">Name: </label>
+        <input id="full-name" name="name" type="text" placeholder="Enter your full name...">
+        <br><br>
+
+        <label for="birth-date">Birth date: </label>
+        <input id="birth-date" name="birth-date" type="text" placeholder="Enter your full birth date...">
+        <br>
+
+        <p>Please select your gender:</p>
+        <div>
+            <label for="male-gender">Male</label>
+            <input id="male-gender" name="gender" value="Male" type="radio" checked>
+
+            <label for="female-gender">Female</label>
+            <input id="female-gender" name="gender" value="Female" type="radio">
+
+            <label for="other-gender">Other</label>
+            <input id="other-gender" name="gender" value="Other" type="radio">
+        </div>
+        <br>
+
+        <label for="city-select">City: </label>
+        <select name="city-select" id="city">
+            <option value="Kyiv">Kyiv</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Odesa">Odesa</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Other-city">Other</option>
+        </select>
+        <br><br>
+
+        <label for="address">Address: </label>
+        <textarea id="address" name="address" placeholder="Enter your full address here..."></textarea>
+        <br><br>
+
+        <p>Please choose languages you speak:</p>
+
+        <label for="english">English</label>
+        <input class='languages' id="english" value="English" name="language" type="checkbox">
+        <br>
+        <label for="ukrainian">Ukrainian</label>
+        <input class='languages' id="ukrainian" value="Ukrainian" name="language" type="checkbox" checked>
+        <br>
+        <label for="german">German</label>
+        <input class='languages' id="german" value="German" name="language" type="checkbox">
+        <br>
+        <label for="french">French</label>
+        <input class='languages' id="french" value="French" name="language" type="checkbox">
+        <br><br>
+
+        <button type="submit" id="submit-btn">Submit</button>
+
+        </form>
+        <div id="info-container"></div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
